@@ -1,0 +1,27 @@
+.group
+	.item
+		display: grid
+		grid-template-columns: 250px 450px
+		gap: 1em
+		place-content: center
+		.name
+			font-size: 1.3rem
+			font-weight: 700
+		.price
+			font-size: 1.2rem
+			font-weight: 400
+		.sku
+			font-size: .9rem
+			line-height: .5
+			background-color: #eee
+			border-radius: .3rem
+			padding: .3rem
+	.description
+		max-width: 700px
+		margin: 0 auto
+		font-weight: 400
+@media screen and (max-width: 768px)
+	.group
+		.item
+			grid-template-columns: auto
+			place-items: center

@@ -1,0 +1,35 @@
+.productList
+	display: grid
+	padding: 1rem
+	grid-template-columns: repeat(auto-fit, 250px)
+	gap: 1em
+	place-content: center
+	.productCard
+		width: 250px
+		height: 350px
+		position: relative
+		overflow: hidden
+		border: .1em solid #eee
+		border-radius: .5em
+		box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1)
+		transition: 0.3s
+		.content
+			position: absolute
+			padding: 0 1rem 1rem
+			text-align: left
+			.name
+				margin: 0
+				font-size: 1.2rem
+				font-weight: 300
+				color: #555
+			.price
+				margin: 0
+				font-size: 1.2rem
+				font-weight: 700
+				color: #000000
+		&:hover
+			transform: translate(0, -10px)
+
+@media screen and (min-width: 1200px)
+	.productList
+		grid-template-columns: repeat(4, 250px)
